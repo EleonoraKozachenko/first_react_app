@@ -1,0 +1,20 @@
+.input {
+  border: 1px solid #ced4da;
+  color: #495057;
+  height: 38px;
+  min-width: 100px;
+  width: calc(100% - 30px);
+  padding: 0 15px;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: gray;
+    font-size: 16px;
+  }
+}
+
+.inputError {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+}

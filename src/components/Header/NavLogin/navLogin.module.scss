@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__infoName {
+    color: #ffffff;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  &__containerAvatar {
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 25px;
+      right: -15px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: url("arrowBottom.png") no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100px;
+    background-color: white;
+    right: 0;
+    top: 100%;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+
+    &.isOpen {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    a {
+      color: #808080;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        color: #474747;
+      }
+    }
+  }
+}

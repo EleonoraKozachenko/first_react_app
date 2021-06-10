@@ -1,0 +1,19 @@
+.formWrapper {
+  height: calc(100vh - 63px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+}

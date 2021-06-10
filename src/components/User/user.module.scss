@@ -1,0 +1,28 @@
+@import "../../styles/mixins.scss";
+
+.user {
+  @include tableGrid;
+  p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px 0;
+  }
+
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  &__column {
+    padding: 15px 0;
+    overflow: hidden;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

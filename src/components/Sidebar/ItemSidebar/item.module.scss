@@ -1,0 +1,20 @@
+.link {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin-bottom: 5px;
+  border: 2px solid transparent;
+  display: inline-block;
+
+  &:hover {
+    background-color: cornflowerblue;
+    color: #fff;
+  }
+
+  &.active {
+    border: 2px solid cornflowerblue;
+  }
+}

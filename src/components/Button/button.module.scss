@@ -1,0 +1,58 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &__uppercase {
+    text-transform: uppercase;
+  }
+
+  &__bold {
+    font-weight: bold;
+  }
+
+  &__color {
+    &_blue {
+      background: cornflowerblue;
+      color: #fff;
+    }
+
+    &_white {
+      color: cornflowerblue;
+      border: 2px solid cornflowerblue;
+      background: #fff;
+    }
+  }
+
+  &__size {
+    &_sm {
+      min-height: 40px;
+      font-size: 14px;
+    }
+
+    &_md {
+      min-height: 50px;
+      font-size: 16px;
+    }
+
+    &_lg {
+      min-height: 60px;
+      font-size: 18px;
+    }
+
+    &_xl {
+      min-height: 70px;
+      font-size: 20px;
+    }
+  }
+
+  &__icon {
+    max-height: 30px;
+  }
+}

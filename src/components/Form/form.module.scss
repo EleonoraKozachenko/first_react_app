@@ -1,0 +1,24 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 300px;
+
+  &__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__border {
+    box-shadow: 0 0 9px -5px rgba(0, 0, 0, 0.3);
+    padding: 25px 30px;
+  }
+}
