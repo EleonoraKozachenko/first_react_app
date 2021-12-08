@@ -11,10 +11,11 @@ function Item(props) {
   const greenStyle = cn(styles[`link__${props.colorSpan}`]);
   return (
     <div>
-      <Link to={name} className={mainStyleLink}>
+      <div className={mainStyleLink}>{name}</div>
+      {/* <Link to={name} className={mainStyleLink}>
         {name}
         {displaySpan && <span className={greenStyle}>123123</span>}
-      </Link>
+      </Link> */}
     </div>
   );
 }

@@ -160,11 +160,13 @@ export default class App extends React.Component {
             onClick={this.toLogOut}
             onChange={this.onChangeSearch}
             searchUser={this.state.searchUser}
-          />{" "}
+          />
         </Header>
         <div className={styles.container}>
           <Sidebar selectedUser={this.state.selectedUser} />
           <main className={styles.mainHome}>
+            <div className={styles.test}></div>
+
             <div className={styles.container__head}>
               <h3 className="title">Users</h3>
               <Button
